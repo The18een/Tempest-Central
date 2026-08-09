@@ -189,3 +189,25 @@ main {
         width: 100%;
     }
 }
+.info-box {
+    margin-bottom: 25px;
+    padding: 30px;
+
+    background: #15151d;
+    border: 1px solid #292936;
+    border-radius: 16px;
+}
+
+.info-box h2 {
+    color: #5865f2;
+}
+
+.info-box p,
+.info-box li {
+    color: #b5bac1;
+    line-height: 1.7;
+}
+
+.info-box li {
+    margin: 8px 0;
+}
