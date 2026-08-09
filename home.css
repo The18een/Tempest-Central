@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #0b0b10;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 18px 45px;
+
+    background: #111118;
+    border-bottom: 1px solid #292936;
+}
+
+nav h2 {
+    margin: 0;
+    color: #5865f2;
+    text-shadow: 0 0 10px #5865f2;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #b5bac1;
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: white;
+    text-shadow: 0 0 10px #5865f2;
+}
+
+
+/* MAIN */
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+/* HERO */
+
+.hero {
+    text-align: center;
+    padding: 110px 20px 80px;
+}
+
+.small-title {
+    color: #5865f2;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    margin: 15px 0;
+
+    text-shadow: 0 0 25px #5865f2;
+}
+
+.description {
+    max-width: 600px;
+    margin: auto;
+
+    color: #b5bac1;
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+
+/* JOIN BUTTON */
+
+.join-button {
+    display: inline-block;
+
+    margin-top: 35px;
+    padding: 14px 30px;
+
+    background: #5865f2;
+    color: white;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+
+    transition: 0.3s;
+}
+
+.join-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px #5865f2;
+}
+
+
+/* CARDS */
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    padding-bottom: 80px;
+}
+
+.card {
+    width: 30%;
+
+    padding: 30px;
+
+    background: #15151d;
+
+    border: 1px solid #292936;
+    border-radius: 16px;
+
+    color: white;
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.card span {
+    font-size: 35px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #b5bac1;
+    line-height: 1.5;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+
+    border-color: #5865f2;
+
+    box-shadow: 0 0 25px #5865f2;
+}
+
+
+/* SMALL SCREENS */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
